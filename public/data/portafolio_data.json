@@ -12,7 +12,7 @@
                 "Healthcare",
                 "AI & ML"
             ],
-            "image": "/logos/medtech.webp",
+            "image": "logos/medtech.webp",
             "images": [
                 "tecmed-1.png",
                 "tecmed-2.png",
@@ -37,7 +37,7 @@
                 "IoT",
                 "Data Analytics"
             ],
-            "image": "/logos/kewazo.webp",
+            "image": "logos/kewazo.webp",
             "images": [
                 "kewazo_portafolio_1.png",
                 "kewazo_portafolio_2.png",
@@ -61,7 +61,7 @@
                 "Gaming",
                 "AI & ML"
             ],
-            "image": "/logos/bavarian_defense.webp",
+            "image": "logos/bavarian_defense.webp",
             "images": [
                 "towerdefence-1.webp",
                 "towerdefence-2.webp",
