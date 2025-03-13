@@ -1,0 +1,79 @@
+{
+    "portfolio": [
+        {
+            "title": "Clinical Data Analyzer",
+            "description": "A web-based system for analyzing patient data and generating medical reports.",
+            "technologies": [
+                "Python",
+                "Django",
+                "PostgreSQL"
+            ],
+            "sectors": [
+                "Healthcare",
+                "AI & ML"
+            ],
+            "image": "/logos/medtech.webp",
+            "images": [
+                "tecmed-1.png",
+                "tecmed-2.png",
+                "tecmed-3.png",
+                "tecmed-4.png",
+                "tecmed-5.png"
+            ],
+            "video": "tecmed-intro-1.mov",
+            "github": "https://github.com/b-laztornex/clinical-data-analyzer",
+            "live_demo": null
+        },
+        {
+            "title": "IoT Data Platform",
+            "description": "Developed an IoT data platform that visualizes real-time metrics in a scalable dashboard.",
+            "technologies": [
+                "React",
+                "Node.js",
+                "WebSockets",
+                "D3.js"
+            ],
+            "sectors": [
+                "IoT",
+                "Data Analytics"
+            ],
+            "image": "/logos/kewazo.webp",
+            "images": [
+                "kewazo_portafolio_1.png",
+                "kewazo_portafolio_2.png",
+                "kewazo_portafolio_3.png",
+                "kewazo_portafolio_4.png",
+                "kewazo_portafolio_5.png"
+            ],
+            "video": "https://drive.google.com/file/d/12la3YHdqcRDXtUlLf3FUqFrDhuSi-XQB/preview",
+            "github": "https://github.com/b-laztornex/iot-dashboard",
+            "live_demo": "https://iot-dashboard.example.com"
+        },
+        {
+            "title": "Bavarian Defence Game",
+            "description": "A strategy defense game built with Unity and C#.",
+            "technologies": [
+                "Unity",
+                "C#",
+                "AI Algorithms"
+            ],
+            "sectors": [
+                "Gaming",
+                "AI & ML"
+            ],
+            "image": "/logos/bavarian_defense.webp",
+            "images": [
+                "towerdefence-1.webp",
+                "towerdefence-2.webp",
+                "towerdefence-3.webp",
+                "towerdefence-4.webp",
+                "towerdefence-5.webp",
+                "towerdefence-6.webp",
+                "towerdefence-7.webp"
+            ],
+            "video": "https://www.youtube.com/watch?v=abc456",
+            "github": "https://github.com/b-laztornex/bavarian-defence",
+            "live_demo": null
+        }
+    ]
+}
