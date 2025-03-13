@@ -22,7 +22,7 @@ const PortfolioGallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/data/portafolio_data.json")
+    fetch(process.env.PUBLIC_URL + "/data/portafolio_data.json")
       .then((response) => response.json())
       .then((data) => {
         setPortfolio(data.portfolio);
