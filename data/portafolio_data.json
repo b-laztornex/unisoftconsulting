@@ -50,7 +50,7 @@
             "live_demo": "https://iot-dashboard.example.com"
         },
         {
-            "title": "Bavarian Defence Game",
+            "title": "Bavarian Defence",
             "description": "A strategy defense game built with Unity and C#.",
             "technologies": [
                 "Unity",
@@ -74,6 +74,33 @@
             "video": "https://www.youtube.com/watch?v=abc456",
             "github": "https://github.com/b-laztornex/bavarian-defence",
             "live_demo": null
+        },
+        {
+            "title": "Viamor Dating",
+            "description": "A dating app designed for polyamorous relationships, helping people connect with like-minded partners.",
+            "technologies": [
+                "Flutter",
+                "Firebase",
+                "RubyonRails",
+                "VueJs"
+            ],
+            "sectors": [
+                "Dating",
+                "Social"
+            ],
+            "image": "logos/viamor.webp",
+            "images": [
+                "viamor_1.png",
+                "viamor_2.png",
+                "viamor_3.png",
+                "viamor_4.png",
+                "viamor_5.png",
+                "viamor_6.png",
+                "viamor_7.png"
+            ],
+            "video": "https://drive.google.com/file/d/1polyamorevideo567/preview",
+            "github": "https://github.com/user/polyamore-dating",
+            "live_demo": "https://polyamore-dating.example.com"
         }
     ]
 }
