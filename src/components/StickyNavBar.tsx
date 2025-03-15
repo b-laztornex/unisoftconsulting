@@ -24,33 +24,74 @@ const StickyNavBar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Smooth scroll function
+  const handleSmoothScroll = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    sectionId: string
+  ) => {
+    event.preventDefault(); // Prevent default anchor behavior
+
+    const section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 80, // Adjust offset if needed
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`} id="navbar">
       <div className="logo">UNISOFT</div>
       <ul className="nav-menu">
         <li>
-          <a href="#about">About</a>
+          <a href="#about" onClick={(e) => handleSmoothScroll(e, "about")}>
+            About
+          </a>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <a
+            href="#services"
+            onClick={(e) => handleSmoothScroll(e, "services")}
+          >
+            Services
+          </a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a
+            href="#portafolio"
+            onClick={(e) => handleSmoothScroll(e, "portafolio")}
+          >
+            Portfolio
+          </a>
         </li>
         <li>
-          <a href="#clients">Clients</a>
+          <a href="#clients" onClick={(e) => handleSmoothScroll(e, "clients")}>
+            Clients
+          </a>
         </li>
         <li>
-          <a href="#work">Work</a>
+          <a href="#work" onClick={(e) => handleSmoothScroll(e, "work")}>
+            Work
+          </a>
         </li>
         <li>
-          <a href="#statistics">Statistics</a>
+          <a
+            href="#statistics"
+            onClick={(e) => handleSmoothScroll(e, "statistics")}
+          >
+            Statistics
+          </a>
         </li>
         <li>
-          <a href="#blog">Blog</a>
+          <a href="#blog" onClick={(e) => handleSmoothScroll(e, "blog")}>
+            Blog
+          </a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact" onClick={(e) => handleSmoothScroll(e, "contact")}>
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

@@ -1,4 +1,5 @@
 import "./App.css";
+import Contact from "./components/Contact";
 import InfiniteImageScroller from "./components/InfiniteImageScroller";
 import PortfolioGallery from "./components/PortfolioGallery";
 import Service from "./components/Service";
@@ -16,7 +17,7 @@ function App() {
       </section>
 
       <section
-        id="service"
+        id="services"
         className="w-full flex items-center justify-center  bg-blue-900 opacity-60"
       >
         <Service />
@@ -34,6 +35,13 @@ function App() {
         className="w-full flex items-center justify-center  bg-white-900"
       >
         <InfiniteImageScroller />
+      </section>
+
+      <section
+        id="contact"
+        className="w-full flex items-center justify-center  bg-purple-900"
+      >
+        <Contact />
       </section>
 
       <section className="w-full flex items-center justify-center bg-gray-200">
