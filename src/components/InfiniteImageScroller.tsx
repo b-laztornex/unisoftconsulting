@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
 const images = [
   "clients/dreamnest.webp",
@@ -24,8 +24,8 @@ const images = [
   "clients/dreamnest.webp",
 ];
 
-const InfiniteImageScroller = () => {
-  const scrollRef = useRef(null);
+const InfiniteImageScroller: React.FC = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const scroll = () => {
