@@ -18,16 +18,21 @@ const Service: React.FC = () => {
           building scalable, high-performance applications.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Service Card */}
+          {/* Service Card 1: Full-Stack Development */}
           <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg flex flex-col items-center">
             <div className="w-12 h-12 mb-4 flex items-center justify-center">
-              {/* Example icon */}
               <svg
                 className="w-full h-full text-blue-900"
-                fill="currentColor"
-                viewBox="0 0 20 20"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M16 18l6-6-6-6M8 6L2 12l6 6"
+                />
               </svg>
             </div>
             <h4 className="text-xl font-semibold text-blue-900 mb-2 text-center">
@@ -39,15 +44,27 @@ const Service: React.FC = () => {
             </p>
           </div>
 
-          {/* Service Card */}
+          {/* Service Card 2: 3D Web Development */}
           <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg flex flex-col items-center">
             <div className="w-12 h-12 mb-4 flex items-center justify-center">
               <svg
                 className="w-full h-full text-blue-900"
-                fill="currentColor"
-                viewBox="0 0 20 20"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4a2 2 0 001-1.73z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M7.5 4.21l7 4.01M7.5 19.79l7-4.01"
+                />
               </svg>
             </div>
             <h4 className="text-xl font-semibold text-blue-900 mb-2 text-center">
@@ -59,7 +76,7 @@ const Service: React.FC = () => {
             </p>
           </div>
 
-          {/* Service Card */}
+          {/* Service Card 3: API & Cloud Solutions */}
           <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg flex flex-col items-center">
             <div className="w-12 h-12 mb-4 flex items-center justify-center">
               <svg
@@ -67,7 +84,7 @@ const Service: React.FC = () => {
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
-                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z" />
+                <path d="M3 13a4 4 0 011.1-7.9 5.5 5.5 0 0110.8 1.2A3.5 3.5 0 0117 13H3z" />
               </svg>
             </div>
             <h4 className="text-xl font-semibold text-blue-900 mb-2 text-center">
@@ -79,7 +96,7 @@ const Service: React.FC = () => {
             </p>
           </div>
 
-          {/* Service Card */}
+          {/* Service Card 4: Technical Mentoring */}
           <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg flex flex-col items-center">
             <div className="w-12 h-12 mb-4 flex items-center justify-center">
               <svg
@@ -87,7 +104,7 @@ const Service: React.FC = () => {
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
-                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z" />
+                <path d="M10 2a6 6 0 00-6 6c0 2.637 1.98 4.835 4.5 5.665V15a1 1 0 001 1h3a1 1 0 001-1v-1.335C14.02 12.835 16 10.637 16 8a6 6 0 00-6-6zm0 12a2 2 0 110-4 2 2 0 010 4z" />
               </svg>
             </div>
             <h4 className="text-xl font-semibold text-blue-900 mb-2 text-center">

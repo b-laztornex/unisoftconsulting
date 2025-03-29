@@ -5,7 +5,8 @@
             "description": "A web-based system for analyzing patient data and generating medical reports.",
             "technologies": [
                 "Python",
-                "Django",
+                "FastApi",
+                "React",
                 "PostgreSQL"
             ],
             "sectors": [
@@ -28,10 +29,11 @@
             "title": "IoT Data Platform",
             "description": "Developed an IoT data platform that visualizes real-time metrics in a scalable dashboard.",
             "technologies": [
-                "React",
+                "Svelte",
                 "Node.js",
                 "WebSockets",
-                "D3.js"
+                "D3.js",
+                "Python"
             ],
             "sectors": [
                 "IoT",
@@ -54,12 +56,11 @@
             "description": "A strategy defense game built with Unity and C#.",
             "technologies": [
                 "Unity",
-                "C#",
-                "AI Algorithms"
+                "C#"
             ],
             "sectors": [
                 "Gaming",
-                "AI & ML"
+                "Entreteiment"
             ],
             "image": "logos/bavarian_defense.webp",
             "images": [
@@ -81,12 +82,14 @@
             "technologies": [
                 "Flutter",
                 "Firebase",
-                "RubyonRails",
-                "VueJs"
+                "Ruby on Rails",
+                "VueJs",
+                "PostgreSQL"
             ],
             "sectors": [
                 "Dating",
-                "Social"
+                "Social",
+                "WebApp"
             ],
             "image": "logos/viamor.webp",
             "images": [
