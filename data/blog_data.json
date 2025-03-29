@@ -1,0 +1,38 @@
+{
+    "blogs": [
+      {
+        "title": "Why React Virtual DOM is So Slow and the Cost of Maintaining 2 Virtual DOMs",
+        "read_time": 6,
+        "summary": "Exploring why React's virtual DOM can be inefficient and the hidden costs of managing two virtual DOMs.",
+        "top_image": "/images/react-vdom.jpg",
+        "image_preview": "/images/react-vdom-preview.jpg",
+        "text": "Managing 2 virtual Doms instances could be harmfull for future development of larger applications",
+        "link": "/blog/react-vdom",
+        "related_videos": ["/videos/react-vdom"],
+        "related_podcasts": []
+      },
+      {
+        "title": "The Ups and Downs of the Node.js Event Loop",
+        "read_time": 6,
+        "summary": "A deep dive into the event loop mechanism in Node.js and how it affects performance.",
+        "top_image": "/images/node-event-loop.jpg",
+        "image_preview": "/images/node-event-loop-preview.jpg",
+        "text": "Managing 2 virtual Doms instances could be harmfull for future development of larger applications",
+        "link": "/blog/node-event-loop",
+        "related_videos": ["/videos/node-event-loop"],
+        "related_podcasts": []
+      },
+      {
+        "title": "The Ups and Downs of the Node.js Event Loop",
+        "read_time": 6,
+        "summary": "A deep dive into the event loop mechanism in Node.js and how it affects performance.",
+        "top_image": "/images/node-event-loop.jpg",
+        "image_preview": "/images/node-event-loop-preview.jpg",
+        "text": "Managing 2 virtual Doms instances could be harmfull for future development of larger applications",
+        "link": "/blog/node-event-loop",
+        "related_videos": ["/videos/node-event-loop"],
+        "related_podcasts": []
+      }
+    ]
+  }
+  
