@@ -20,6 +20,7 @@ const ThreeBackground: React.FC = () => {
     if (mountRef.current) {
       mountRef.current.appendChild(renderer.domElement);
     }
+    const mountNode = mountRef.current;
 
     // Compute world height at the distance of the sphere (z=0)
     const fovInRadians = THREE.MathUtils.degToRad(camera.fov);
@@ -37,36 +38,6 @@ const ThreeBackground: React.FC = () => {
     });
     const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
     scene.add(sphere);
-
-    // Create a line material for connections
-    const lineMaterial = new THREE.LineBasicMaterial({ color: 0xffffff });
-
-    // Function to create a line between two random points on the sphere
-    const createConnectionLine = () => {
-      // Random point on sphere surface
-      const randomPointOnSphere = () => {
-        const phi = Math.random() * 2 * Math.PI;
-        const theta = Math.acos(2 * Math.random() - 1);
-        const x = Math.sin(theta) * Math.cos(phi);
-        const y = Math.sin(theta) * Math.sin(phi);
-        const z = Math.cos(theta);
-        return new THREE.Vector3(x, y, z).multiplyScalar(sphereRadius);
-      };
-
-      const start = randomPointOnSphere();
-      const end = randomPointOnSphere();
-      const points = [start, end];
-      const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
-      return new THREE.Line(lineGeometry, lineMaterial);
-    };
-
-    // Create several lines and add them to the scene
-    const lines: THREE.Line[] = [];
-    for (let i = 0; i < 10; i++) {
-      const line = createConnectionLine();
-      scene.add(line);
-      lines.push(line);
-    }
 
     // Animation loop (infinite loop)
     const animate = () => {
@@ -90,8 +61,8 @@ const ThreeBackground: React.FC = () => {
     // Cleanup on unmount
     return () => {
       window.removeEventListener("resize", handleResize);
-      if (mountRef.current) {
-        mountRef.current.removeChild(renderer.domElement);
+      if (mountNode) {
+        mountNode.removeChild(renderer.domElement);
       }
       renderer.dispose();
     };

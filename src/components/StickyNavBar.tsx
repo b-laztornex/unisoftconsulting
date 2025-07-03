@@ -49,11 +49,6 @@ const StickyNavBar: React.FC<StickyNavBarProps> = ({
         {activeHomePage ? (
           <>
             <li>
-              <a href="#about" onClick={(e) => handleSmoothScroll(e, "about")}>
-                About
-              </a>
-            </li>
-            <li>
               <a
                 href="#services"
                 onClick={(e) => handleSmoothScroll(e, "services")}
@@ -78,30 +73,6 @@ const StickyNavBar: React.FC<StickyNavBarProps> = ({
               </a>
             </li>
             <li>
-              <a href="#work" onClick={(e) => handleSmoothScroll(e, "work")}>
-                Work
-              </a>
-            </li>
-            <li>
-              <a
-                href="#statistics"
-                onClick={(e) => handleSmoothScroll(e, "statistics")}
-              >
-                Statistics
-              </a>
-            </li>
-            <li>
-              <a
-                href="#blog"
-                onClick={() => {
-                  // When Blog is clicked, toggle to show only the Home link.
-                  setActiveHomePage(false);
-                }}
-              >
-                Blog
-              </a>
-            </li>
-            <li>
               <a
                 href="#contact"
                 onClick={(e) => handleSmoothScroll(e, "contact")}
@@ -109,19 +80,38 @@ const StickyNavBar: React.FC<StickyNavBarProps> = ({
                 Contact
               </a>
             </li>
+            <li>
+              <a
+                href="#blog"
+                onClick={() => {
+                  setActiveHomePage(false);
+                }}
+              >
+                Blog
+              </a>
+            </li>
           </>
         ) : (
-          <li>
-            <a
-              href="#home"
-              onClick={() => {
-                // When Home is clicked in blog mode, set activeHomePage to true.
-                setActiveHomePage(true);
-              }}
-            >
-              Home
-            </a>
-          </li>
+          <>
+            <li>
+              <a
+                href="#home"
+                onClick={() => {
+                  setActiveHomePage(true);
+                }}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <button
+                className="ml-4 px-4 py-2 bg-blue-900 text-white rounded hover:bg-blue-700 transition"
+                onClick={() => setActiveHomePage(true)}
+              >
+                GO BACK
+              </button>
+            </li>
+          </>
         )}
       </ul>
     </nav>

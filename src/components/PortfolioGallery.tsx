@@ -55,10 +55,10 @@ const PortfolioGallery: React.FC = () => {
 
   return (
     <div className="py-12 px-4 relative">
-      <h2 className="text-center text-3xl font-bold text-white mb-4">
+      <h2 className="text-center text-3xl font-bold text-black mb-4">
         Portafolio
       </h2>
-      <p className="text-center text-lg text-gray-300 mb-8">
+      <p className="text-center text-lg text-black mb-8">
         With over 10 years of experience in web development, I specialize in
         building scalable, high-performance applications.
       </p>

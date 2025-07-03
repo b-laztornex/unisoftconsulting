@@ -1,4 +1,6 @@
 const Service: React.FC = () => {
+  
+  
   return (
     <div className="relative min-h-screen">
       {/* Background image */}
